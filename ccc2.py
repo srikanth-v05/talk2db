@@ -154,7 +154,7 @@ chat_histories = {}
 
 @app.route('/')
 def main1():
-    return render_template('index2.html')
+    return render_template('index.html')
 @app.route('/execute_query', methods=['POST'])
 def execute_query():
     global results, columns, visualization
