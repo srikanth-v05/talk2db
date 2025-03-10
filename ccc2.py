@@ -341,4 +341,5 @@ def clear_history():
     return jsonify({"message": "Chat history cleared"}), 200
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 10000))  # Change 10000 to 5000 (default Flask port)
     app.run(host="0.0.0.0", port=port)
